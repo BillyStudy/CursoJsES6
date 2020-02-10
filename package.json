@@ -1,0 +1,16 @@
+{
+  "name": "CursoJsES6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BillyStudy/CursoJsES6.git",
+  "author": "BillyStudy <billystudy@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
+  },
+  "scripts": {
+    "dev": "babel ./src/main.js -o ./bundle.js -w"
+  }
+}
