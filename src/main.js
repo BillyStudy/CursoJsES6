@@ -1,23 +1,10 @@
-class List{
-    constructor(){
-        this.data = []
-    } 
-     add(data){
-        this.data.push(data);
-        console.log(this.data);
+function Soma(x) {
+    let y = 2;
+
+    if (x > 5) {
+        console.log(x, y);
     }
     
 }
 
-class TodoList extends List{
-    constructor(){
-        super();
-    }
-  
-}
-
-const MinhaLista = new TodoList();
-
-document.getElementById('novotodo').onclick = function(){
-    MinhaLista.add('Novo todo');   
-}
+Soma(10);
