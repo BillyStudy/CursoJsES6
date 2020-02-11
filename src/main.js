@@ -13,7 +13,7 @@ const find = arr.find(function(item){
     return item === 11
 })
 
-console.log(filter);
+//console.log(filter);
 
 // Desestruturação
 
@@ -26,5 +26,23 @@ const Usuario = {
     }
 }
 
-const mostraValores = ({nome, idade}) => console.log(nome, idade);
-mostraValores(Usuario);
+    //rest
+const mostraValores = ({nome, ...resto}) => console.log(nome, resto);
+//mostraValores(Usuario);
+
+
+//Rest = pegar o resto das props
+
+function Soma(...nums){
+    return nums.reduce((total, next) => total + next);
+}
+
+//console.log(Soma(1,2,3,4,5,6));
+
+
+//[SPREAD]
+
+    const arr1 = [1,3,5];
+    const arr2 = [7,11,13];
+    const arr3 = [...arr1, ...arr2];
+    //console.log (arr3);
