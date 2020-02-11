@@ -1,6 +1,7 @@
 "use strict";
 
-var arr = [1, 3, 5, 7, 11];
+var arr = [1, 3, 5, 7, 11]; //ArrowFunction: menor verbosidade de código
+
 var newArr = arr.map(function (item) {
   return item * 10;
 });
@@ -13,4 +14,4 @@ var filter = arr.filter(function (item) {
 var find = arr.find(function (item) {
   return item === 11;
 });
-console.log(find);
+console.log(filter);
