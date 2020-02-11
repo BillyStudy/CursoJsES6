@@ -53,3 +53,8 @@ function Soma() {
 var arr1 = [1, 3, 5];
 var arr2 = [7, 11, 13];
 var arr3 = [].concat(arr1, arr2); //console.log (arr3);
+// [TEMPLATE LITERALS]
+
+var nome = 'Gustavo';
+var sobrenome = 'Ferreira';
+console.log("Meu nome \xE9 ".concat(nome, " ").concat(sobrenome));

@@ -46,3 +46,10 @@ function Soma(...nums){
     const arr2 = [7,11,13];
     const arr3 = [...arr1, ...arr2];
     //console.log (arr3);
+
+
+// [TEMPLATE LITERALS]
+
+    const nome = 'Gustavo';
+    const sobrenome = 'Ferreira'
+    console.log(`Meu nome é ${nome} ${sobrenome}`)
