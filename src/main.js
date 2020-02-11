@@ -1,3 +1,5 @@
-import {Soma} from './js/functions';
+import * as funcoes from './js/functions';
 
-console.log(Soma(1,1,1,1,1));
+console.log(funcoes.Soma(1,1,1,1,1));
+
+alert('ES6');
