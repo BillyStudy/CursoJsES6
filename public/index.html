@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+    <title>Github</title>
 </head>
 <body>
-    <input type="text" id="nomeUser" />
-    <button id="btnPesquisar" onclick="PesquisaUser()">Pesquisar</button>
+    <h1>Github Search</h1>
+    <h3>Pesquise qualquer perfil do github</h3>
+    <form id="containerSrc">
+        <input type="text" id="nomeUser" placeholder="Usuário - Pressione [ENTER]"/>
+    </form>
+    <!-- <hr/> -->
+
+    <div id="contantList">
+
+        <ul id="listUsers">
+            
+        </ul>
+
+    </div>
 </body>
 <script src="../bundle.js"></script>
 </html>
