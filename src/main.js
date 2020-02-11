@@ -14,3 +14,17 @@ const find = arr.find(function(item){
 })
 
 console.log(filter);
+
+// Desestruturação
+
+const Usuario = {
+    nome: 'Gustavo',
+    idade: 18,
+    endereco: {
+        cidade: 'Osasco',
+        estado: 'SP'
+    }
+}
+
+const mostraValores = ({nome, idade}) => console.log(nome, idade);
+mostraValores(Usuario);

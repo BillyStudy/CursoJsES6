@@ -14,4 +14,21 @@ var filter = arr.filter(function (item) {
 var find = arr.find(function (item) {
   return item === 11;
 });
-console.log(filter);
+console.log(filter); // Desestruturação
+
+var Usuario = {
+  nome: 'Gustavo',
+  idade: 18,
+  endereco: {
+    cidade: 'Osasco',
+    estado: 'SP'
+  }
+};
+
+var mostraValores = function mostraValores(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade;
+  return console.log(nome, idade);
+};
+
+mostraValores(Usuario);
