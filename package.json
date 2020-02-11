@@ -5,13 +5,16 @@
   "repository": "https://github.com/BillyStudy/CursoJsES6.git",
   "author": "BillyStudy <billystudy@hotmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
-    "@babel/preset-env": "^7.8.4"
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^4.0.0-beta.2"
   },
   "scripts": {
-    "dev": "babel ./src/main.js -o ./bundle.js -w"
+    "dev": "webpack mode=development -w"
   }
 }
