@@ -1,5 +1,13 @@
-import * as funcoes from './js/functions';
+//import * as funcoes from './js/functions';
 
-console.log(funcoes.Soma(1,1,1,1,1));
+const MinhaPromisse = () => new Promise((resolve, reject) => 
+    setTimeout(() => resolve('OK'), 2000)
+);
 
-alert('ES6');
+
+async function executaPromisse() {
+    const response = await MinhaPromisse();
+    console.log(response);
+}
+
+executaPromisse();
